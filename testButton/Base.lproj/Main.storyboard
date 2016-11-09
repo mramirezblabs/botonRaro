@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,86 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYL-Gh-6Sl" userLabel="ViewAzul">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APf-Jt-Cvk">
+                                        <color key="backgroundColor" red="0.18294135759999999" green="0.2130759039" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="HsJ-2E-rrX"/>
+                                            <constraint firstAttribute="height" constant="100" id="u1F-sE-sne"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77L-5U-H3T">
+                                        <color key="backgroundColor" red="0.18294135759999999" green="0.2130759039" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="IYd-Wb-Sec"/>
+                                            <constraint firstAttribute="height" constant="100" id="oO5-AR-3ld"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonBlueOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLG-sH-Xpl"/>
+                                            <action selector="buttonBluePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jTa-dt-ydc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="APf-Jt-Cvk" firstAttribute="centerY" secondItem="SYL-Gh-6Sl" secondAttribute="centerY" id="1tK-Ks-ZcK"/>
+                                    <constraint firstItem="77L-5U-H3T" firstAttribute="centerY" secondItem="SYL-Gh-6Sl" secondAttribute="centerY" id="3tN-aH-cQ0"/>
+                                    <constraint firstItem="APf-Jt-Cvk" firstAttribute="centerX" secondItem="SYL-Gh-6Sl" secondAttribute="centerX" id="CK3-JS-586"/>
+                                    <constraint firstItem="77L-5U-H3T" firstAttribute="centerX" secondItem="SYL-Gh-6Sl" secondAttribute="centerX" id="vuZ-yQ-s8r"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcB-RH-Ack" userLabel="ViewNaranja">
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.2156862745" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTL-Jp-O6M" userLabel="ViewAzul">
+                                <color key="backgroundColor" red="0.97299903440000002" green="0.79094374769999998" blue="0.22358397839999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1l-K5-Xkv" userLabel="ViewNaranja">
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e1l-K5-Xkv" firstAttribute="top" secondItem="SYL-Gh-6Sl" secondAttribute="bottom" id="Kz1-Kh-xc0"/>
+                            <constraint firstAttribute="trailing" secondItem="AcB-RH-Ack" secondAttribute="trailing" id="O6h-6o-pxW"/>
+                            <constraint firstItem="FTL-Jp-O6M" firstAttribute="top" secondItem="AcB-RH-Ack" secondAttribute="bottom" id="O7C-sc-0c5"/>
+                            <constraint firstItem="SYL-Gh-6Sl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OH4-M1-gFZ"/>
+                            <constraint firstItem="SYL-Gh-6Sl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q4h-g1-p5K"/>
+                            <constraint firstItem="e1l-K5-Xkv" firstAttribute="height" secondItem="SYL-Gh-6Sl" secondAttribute="height" id="YLH-oq-P1I"/>
+                            <constraint firstItem="e1l-K5-Xkv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cMy-IT-ysl"/>
+                            <constraint firstItem="AcB-RH-Ack" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gWZ-Us-r8W"/>
+                            <constraint firstItem="SYL-Gh-6Sl" firstAttribute="width" secondItem="AcB-RH-Ack" secondAttribute="width" id="lmy-Is-e87"/>
+                            <constraint firstItem="FTL-Jp-O6M" firstAttribute="leading" secondItem="e1l-K5-Xkv" secondAttribute="trailing" id="rZW-LE-DcP"/>
+                            <constraint firstItem="AcB-RH-Ack" firstAttribute="leading" secondItem="SYL-Gh-6Sl" secondAttribute="trailing" id="ulY-Jd-p5Z"/>
+                            <constraint firstItem="FTL-Jp-O6M" firstAttribute="height" secondItem="AcB-RH-Ack" secondAttribute="height" id="woW-Y3-zOO"/>
+                            <constraint firstAttribute="trailing" secondItem="FTL-Jp-O6M" secondAttribute="trailing" id="wut-cu-Nuf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FTL-Jp-O6M" secondAttribute="bottom" id="yA0-Uh-ezK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e1l-K5-Xkv" secondAttribute="bottom" id="yJt-7A-iOX"/>
+                            <constraint firstItem="e1l-K5-Xkv" firstAttribute="width" secondItem="FTL-Jp-O6M" secondAttribute="width" id="yuV-XH-iwP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueView" destination="SYL-Gh-6Sl" id="yB7-cG-bx3"/>
+                        <outlet property="buttonBlue" destination="APf-Jt-Cvk" id="Ubk-Ge-VOM"/>
+                        <outlet property="buttonBlueTop" destination="77L-5U-H3T" id="zdI-QM-fO4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="73.5" y="137.5"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
